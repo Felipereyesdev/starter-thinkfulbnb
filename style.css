@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -41,13 +41,28 @@ main img {
   flex-direction: column;
 }
 
+.form-group{
+  display: flex;
+  flex-direction: column;
+  
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
+}
+
 .item {
   flex: 1;
   margin: 10px;
+  
 }
 
 .item-double {
   flex: 2;
+  align-self: center;
 }
 
 /* -------  Navigation ------- */
@@ -62,6 +77,17 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
 header nav ul li {
@@ -117,3 +143,144 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 271px){
+
+  .logo {
+    
+    font-size: 37px;
+    
+  }
+
+  form{
+    font-size: 12px;
+  }
+
+ 
+
+}
+
+@media all and (min-width: 300px) {
+  .logo {
+    
+    font-size: 50px;
+    
+  }
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+ 
+}
+@media all and (min-width: 480px){
+  
+  
+.form-group{
+  display: block;
+}
+.logo {
+    
+  font-size: 72px;
+  
+}
+
+ 
+
+  
+
+  
+
+
+}
+
+@media all and (min-width: 800px){
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1{
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  header nav{
+    margin-top: 8px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+  .item{
+    align-self: center;
+  }
+  .form-group{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .options{
+    justify-content: space-between;
+  }
+
+  
+form select,
+form input {
+  width: 100px;
+  margin-top:40px;
+  margin-right: 0;
+}
+
+.label-class{
+  width: 0px;
+  padding-top: 20px;
+  padding-left: 50px;
+  
+}
+
+form button{
+  width: 100px;
+  margin-left: auto;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+@media all and (min-width: 1200px){
+  form button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  
+
+  form select,
+form input {
+  width: 180px;
+}
+
+form{
+  font-size: 15px;
+}
+
+
+}
