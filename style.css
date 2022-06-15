@@ -249,6 +249,8 @@ form input {
 
 form button{
   width: 100px;
+  height: 50px;
+  margin-top: 20px;
   margin-left: auto;
 
 }
@@ -279,7 +281,7 @@ form input {
 }
 
 form{
-  font-size: 15px;
+  font-size: 12px;
 }
 
 
